@@ -4,7 +4,7 @@
       rgba(38, 70, 83, 0.6),
       rgba(38, 70, 83, 0.6)
     ),
-    url('../images/banner.png');
+    url('../../images/banner.png');
 
   /* Fallback color in case the image doesn’t load */
   background-color: #264653;
