@@ -1,0 +1,16 @@
+.btn-primary {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 8px 18px rgba(42,157,143,0.3);
+}
+
+.btn-primary:hover {
+  background-color: #21867a;
+  transform: translateY(-2px);
+}
