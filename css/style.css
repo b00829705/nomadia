@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
 
-@import url("components/banner.css");
+/* Keep these existing imports if you have these files, otherwise they will be ignored */
 @import url("components/button.css");
 @import url("components/card.css");
 @import url("components/cards.css");
@@ -40,3 +40,11 @@ h2 {
   margin-top: 60px;
   margin-bottom: 30px;
 }
+
+/* =========================================
+   FIXED BANNER CODE (Added by Gemini)
+   ========================================= */
+
+.banner {
+  /* 1. The Image Path */
+  /* The '../' tells the code to go up out of the 'css' folder, then into 'images' */
