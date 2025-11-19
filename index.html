@@ -1,3 +1,19 @@
+Since the external CSS file wasn't updating for you, we will use the "Direct Override" method. We are going to write the banner instructions directly inside this file. This forces the browser to listen immediately.
+
+Here is the FULL code for your index.html file.
+
+Instructions:
+
+Open your index.html file.
+
+Delete everything currently in it.
+
+Copy and paste the code below.
+
+Save and upload.
+
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,9 +21,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nomadia - Work Anywhere, Belong Everywhere</title>
     <link rel="stylesheet" href="css/style.css" />
+    
+    <style>
+      .banner {
+        /* 1. This loads the image directly from your images folder */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/banner.jpg');
+        
+        /* 2. Ensures the image covers the area and is centered */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        /* 3. Sets the height and aligns text to center */
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        /* 4. Forces text color to white */
+        color: white;
+      }
+
+      .banner h1 {
+        color: white;
+        font-size: 3rem;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Shadow makes text readable */
+      }
+
+      .banner p {
+        font-size: 1.3rem;
+        color: #f0f0f0;
+        margin-bottom: 25px;
+      }
+    </style>
   </head>
   <body>
-    <!-- Banner Section -->
     <div class="banner">
       <div class="container">
         <h1>Work Anywhere.<br>Belong Everywhere.</h1>
@@ -16,7 +66,6 @@
       </div>
     </div>
 
-    <!-- Featured Destinations -->
     <div class="container">
       <h2>Popular Nomad Hubs</h2>
       <div class="cards">
@@ -57,14 +106,12 @@
       </div>
     </div>
 
-    <!-- Join Section -->
     <section class="cta">
       <h2>Join the Nomadia Network</h2>
       <p>Connect with thousands of remote professionals living the Nomadia lifestyle.</p>
       <a href="#" class="btn-primary">Join Now</a>
     </section>
 
-    <!-- Footer -->
     <footer>
       <p>© 2025 Nomadia · Work Anywhere, Belong Everywhere.</p>
       <div class="footer-links">
